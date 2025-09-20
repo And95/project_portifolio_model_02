@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Protifolio</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      margin: 0px 15%;
+      padding: 0px;
+    }
+
+    main {
+      margin-bottom: 100px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .marginTopBottom {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .conteiner {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      margin-top: 60px;
+    }
+
+    #logo {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 30px;
+      width: 114;
+      height: 24;
+      top: 49px;
+      left: 974px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    #linksHeader {
+      font-family: Poppins;
+      font-weight: 400;
+      width: 114;
+      height: 24;
+      top: 49px;
+      left: 974px;
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    #linksHeader li {
+      list-style: none;
+      display: inline;
+      margin-left: 15px;
+    }
+
+    #linksHeader a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    #forMe h1 {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 45px;
+      letter-spacing: 0%;
+      width: 430;
+      height: 166;
+      top: 215px;
+      left: 160px;
+    }
+
+    p.gray {
+      color: #575455;
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      width: 398;
+      height: 64;
+      top: 401px;
+      left: 160px;
+      margin-top: 10px;
+    }
+
+    #forMe img {
+      width: 100%;
+    }
+
+    #imgHeader {
+      margin-left: 45px;
+    }
+
+    #btnServices {
+      width: 180;
+      height: 48;
+      top: 495px;
+      left: 160px;
+      border-radius: 50px;
+      font-size: 20px;
+      background: #0059ff;
+      color: #fff;
+      padding: 15px 45px;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    #btnServices:hover {
+      background: #90b6fc;
+    }
+
+    .headerLogo {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .headerCallToAction {
+      font-family: Poppins;
+      /* font-weight: 600; */
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      width: 210;
+      height: 48;
+      top: 673px;
+      left: 160px;
+    }
+
+    h2.red {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      /* text-align: center; */
+      width: 75;
+      height: 24;
+      top: 836px;
+      left: 719px;
+      color: #F75C4E;
+      margin-bottom: 20px;
+    }
+
+    h1.black {
+      font-family: Poppins;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      /* text-align: center; */
+      width: 265;
+      height: 54;
+      top: 866px;
+      left: 624px;
+    }
+
+    #servicesDescrition {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      text-align: center;
+      width: 236;
+      height: 64;
+      top: 940px;
+      left: 638px;
+      color: #575455;
+      line-height: 30px;
+    }
+
+    .alignServices {
+      text-align: center;
+    }
+
+    .h3Services {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      width: 165;
+      height: 30;
+      top: 1127px;
+      left: 690px;
+      color: #070F18;
+      margin-top: 20px;
+    }
+
+    .contactImg {
+      width: 100%;
+    }
+
+    .contactDesc {
+      margin-left: 45px;
+      margin-top: 50px;
+    }
+
+    contactDesc h2 {
+      text-align: left;
+    }
+
+    #contactForm input {
+      width: 75%;
+      height: 48;
+      top: 1594px;
+      left: 813px;
+      border-radius: 50px;
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #575455;
+      background: #F5F6FB;
+      padding: 15px 15px;
+      display: block;
+      margin: 30px 0px;
+      border: none;
+    }
+
+    #contactForm button {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      width: 180;
+      height: 48;
+      top: 1662px;
+      left: 813px;
+      border-radius: 50px;
+      background-color: #1F7CFF;
+      color: #fff;
+      border: none;
+      padding: 15px 40px;
+      cursor: pointer;
+    }
+
+    #contactForm button:hover {
+      background: #90b6fc;
+    }
+
+    .portifolioImg img {
+      padding: 0 repeat(3, 50px);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Bloco Header|Links -->
+    <nav class="conteiner" id="header">
+      <a href="">
+        <div id="logo"><u>Portifolio</u></div>
+      </a>
+      <div id="linksHeader">
+        <ul>
+          <li><a href="#services">Meus Serviços</a></li>
+          <li><a href="#leads">Fale Comigo</a></li>
+          <li><a href="#portifolio">Portifolio</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Bloco About Me -->
+    <div class="conteiner marginTopBottom" id="about">
+      <div id="forMe">
+        <h1><b>Olá, meu nome <br> é Maria</b></h1>
+        <p class="gray">Sou programadora e gostaria de apresentar meu <br>
+          trabalho para você através deste portfólio.
+        </p>
+        <button id="btnServices">Meus Serviços</button>
+      </div>
+      <div id="imgHeader">
+        <img src="./img/header.svg" alt="header">
+      </div>
+    </div>
+    <!-- Bloco Clients -->
+    <div class="conteiner marginTopBottom" id="clients">
+      <div class="headerCallToAction">
+        <p>Alguns dos<br> meus clientes</p>
+      </div>
+      <div class="headerLogo"><img src="./img/apple.svg" alt="apple"></div>
+      <div class="headerLogo"><img src="./img/slack.svg" alt="slack"></div>
+      <div class="headerLogo"><img src="./img/spotify.svg" alt="spotify"></div>
+    </div>
+    <!--Bloco Services|Title -->
+    <div class="conteiner marginTopBottom" id="titleServices">
+      <div>
+        <h2 class="red alignServices  ">Conheça</h2>
+        <h1 class="black alignServices">Meus Serviços</h1>
+        <p id="servicesDescrition">Vou ajudar a sua empresa a<br>alcançar grandes resultados.</p>
+      </div>
+    </div>
+    <!--Bloco Services -->
+    <div class="conteiner marginTopBottom" id="services">
+      <div class="alignServices">
+        <img src="./img/icon1.svg" alt="icon1">
+        <h3 class="h3Services">Consultoria</h3>
+        <p class="gray">Te ajudo a organizar sua empresa<br>e melhorar seus resultados.</p>
+      </div>
+      <div class="alignServices">
+        <img src="./img/icon2.svg" alt="icon2">
+        <h3 class="h3Services">Email Marketing</h3>
+        <p class="gray">Gerenciar campanhas é difícil.<br>Conte comigo para te ajudar.</p>
+      </div>
+      <div class="alignServices">
+        <img src="./img/icon3.svg" alt="icon3">
+        <h3 class="h3Services">Criação de Sites</h3>
+        <p class="gray">Desenvolvo seu site inteiro<br>do zero e te entrego prontinho.</p>
+      </div>
+    </div>
+    <!--Bloco Leads Clients -->
+    <div class="conteiner marginTopBottom" id="leads">
+      <div class="contactImg">
+        <img src="./img/contact.svg" alt="contact">
+      </div>
+      <div class="contactDesc">
+        <h2 class="red">Economize seu tempo</h2>
+        <h1 class="black">Ganhe mais dinheiro</h1>
+        <p class="gray">Digite aqui seu endereço de e-mail. Eu entrarei em<br>contato para fornecer um diagnóstico gratuito.</p>
+        <form action="https://formspree.io/f/mgvyyeez" method="POST" id="contactForm">
+          <input type="email" name="EMAIL" required placeholder="E-mail">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <!--Bloco Portifolio|Title -->
+    <div class="conteiner marginTopBottom" id="portifolioTitle">
+      <div class="portifolioTitle">
+        <h2 class="red">Conheça meu trabalho</h2>
+        <h1 class="black">Portifolio</h1>
+      </div>
+    </div>
+    <!--Bloco Portifolio -->
+    <div class="conteiner marginTopBottom" id="portifolio">
+      <div class="portifolioImg"><a href=""><img src="./img/portifolio1.svg" alt="imagem do portifolio 1"></a></div>
+      <div class="portifolioImg"><a href=""><img src="./img/portifolio2.svg" alt="imagem do portifolio 2"></a></div>
+      <div class="portifolioImg"><a href=""><img src="./img/portifolio3.svg" alt="imagem do portifolio 3"></a></div>
+    </div>
+  </main>
+</body>
+
+</html>
