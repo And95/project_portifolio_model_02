@@ -2,4 +2,4 @@
 
 Desenvolvido modelo de portfólio pela Escola DNC.
 
-Link: projectportifoliomodel2byandregonzaga.netlify.app
+Link: https://projectportifoliomodel2byandregonzaga.netlify.app
