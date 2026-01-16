@@ -1,4 +1,4 @@
-# project_Portifolio_Model_02
+# project_portifolio_model_02
 
 Desenvolvido modelo de portfólio pela Escola DNC.
 
