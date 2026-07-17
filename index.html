@@ -98,6 +98,7 @@
       font-size: 16px;
       line-height: 32px;
       letter-spacing: 0%;
+      max-width: 46ch;
       width: 398;
       height: 64;
       top: 401px;
@@ -230,8 +231,12 @@
       margin-top: 50px;
     }
 
-    contactDesc h2 {
+    .contactDesc h2 {
       text-align: left;
+    }
+
+    .contactDesc p {
+      max-width: 50ch;
     }
 
     #contactForm input {
@@ -326,6 +331,12 @@
         gap: 35px;
       }
 
+      #forMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       #forMe h1 {
         font-size: 36px;
         line-height: 1.3;
@@ -335,6 +346,8 @@
         width: auto;
         font-size: 16px;
         line-height: 28px;
+        max-width: 35ch;
+        padding-left: 70px;
       }
 
       #imgHeader {
@@ -353,7 +366,8 @@
       }
 
       #contactForm {
-        width: 90%;
+        width: 100%;
+        margin-top: 0px;
       }
 
       #contactForm input {
@@ -377,8 +391,8 @@
 
 
     /* ==========================================================
-MOBILE
-==========================================================*/
+       MOBILE
+    ==========================================================*/
 
     @media (max-width:768px) {
 
@@ -467,6 +481,7 @@ MOBILE
       p.gray {
         width: auto;
         line-height: 30px;
+        padding-left: 0px;
       }
 
       #btnServices {
@@ -515,7 +530,7 @@ MOBILE
       /* CONTATO */
 
       #leads {
-        gap: 50px;
+        gap: 10px;
       }
 
       .contactImg {
@@ -537,7 +552,8 @@ MOBILE
       }
 
       #contactForm {
-        margin-top: 30px;
+        margin-top: 0px;
+        padding: 0 10px;
       }
 
       #contactForm input {
@@ -583,6 +599,10 @@ MOBILE
 
       #forMe h1 {
         font-size: 28px;
+      }
+
+      #contactForm {
+        margin-top: 0px;
       }
 
       .black {
@@ -639,7 +659,7 @@ MOBILE
     <div class="conteiner marginTopBottom" id="about">
       <div id="forMe">
         <h1><b>Olá, meu nome <br> é Maria</b></h1>
-        <p class="gray">Sou programadora e gostaria de apresentar meu <br>
+        <p class="gray">Sou programadora e gostaria de apresentar meu
           trabalho para você através deste portfólio.
         </p>
         <button id="btnServices">Meus Serviços</button>
@@ -695,7 +715,7 @@ MOBILE
           <h2 class="red">Economize seu tempo</h2>
           <h1 class="black">Ganhe mais dinheiro</h1>
         </div>
-        <p class="gray">Digite aqui seu endereço de e-mail. Eu entrarei em<br>contato para fornecer um diagnóstico gratuito.</p>
+        <p class="gray">Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito.</p>
         <form action="https://formspree.io/f/mgvyyeez" method="POST" id="contactForm">
           <input type="email" name="EMAIL" required placeholder="E-mail">
           <button type="submit">Enviar</button>
