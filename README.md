@@ -1,5 +1,17 @@
-# project_portifolio_model_02
+# Portfolio Model 02
 
-Desenvolvido modelo de portfólio pela Escola DNC.
+Portfolio template developed during the DNC School course.
 
-Link: https://pj-portifoliomodel2byag.netlify.app
+## 🚀 Live Demo
+
+https://pj-portifoliomodel2byag.netlify.app
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 👨‍💻 Author
+
+André Gonzaga
